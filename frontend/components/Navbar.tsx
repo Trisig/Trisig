@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-10 py-4 border-b border-white/10 bg-[#050d1a]/80 backdrop-blur-sm">
@@ -8,18 +10,18 @@ export default function Navbar() {
 
       {/* Links */}
       <div className="flex items-center gap-8 text-sm text-white/70">
-        <a href="#features" className="hover:text-white transition-colors">
+        <Link href="#features" className="hover:text-white transition-colors">
           Features
-        </a>
-        <a href="#stats" className="hover:text-white transition-colors">
+        </Link>
+        <Link href="#stats" className="hover:text-white transition-colors">
           Security
-        </a>
-        <a href="#guardian" className="hover:text-white transition-colors">
+        </Link>
+        <Link href="#guardian" className="hover:text-white transition-colors">
           Guardian
-        </a>
-        <a href="#" className="hover:text-white transition-colors">
+        </Link>
+        <Link href="#" className="hover:text-white transition-colors">
           Docs
-        </a>
+        </Link>
       </div>
 
       {/* CTA */}
