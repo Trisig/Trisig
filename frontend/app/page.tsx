@@ -1,9 +1,9 @@
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import Features from "@/components/Features";
-import Stats from "@/components/Stats";
-import Guardian from "@/components/Guardian";
-import Footer from "@/components/Footer";
+import Hero from "@/components/homepage/Hero";
+import Features from "@/components/homepage/Features";
+import Stats from "@/components/homepage/Stats";
+import Guardian from "@/components/homepage/Guardian";
+import Footer from "@/components/homepage/Footer";
 
 export default function Home() {
   return (
