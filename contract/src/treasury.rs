@@ -42,9 +42,13 @@ impl TrisigContract {
             member_count: 1,
         };
 
-        env.storage().persistent().set(&DataKey::Group(id.clone()), &group);
+        env.storage()
+            .persistent()
+            .set(&DataKey::Group(id.clone()), &group);
         // Mark admin as a member
-        env.storage().persistent().set(&DataKey::Member(id, caller), &true);
+        env.storage()
+            .persistent()
+            .set(&DataKey::Member(id, caller), &true);
 
         Ok(group)
     }
@@ -75,7 +79,9 @@ impl TrisigContract {
 
         env.storage().persistent().set(&member_key, &true);
         group.member_count += 1;
-        env.storage().persistent().set(&DataKey::Group(group_id), &group);
+        env.storage()
+            .persistent()
+            .set(&DataKey::Group(group_id), &group);
 
         Ok(())
     }
